@@ -5,9 +5,112 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.products .col-md-2:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.products .addBtn{
+    transform: translateY(200%);
+    transition: 0.5s all;
+    
+}
+.products .col-md-2:hover .addBtn{
+    transform: translateY(0);
+}
+.card{
+    transition: box-shadow 0.5s;
+}
+.category:hover .card{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.brands:hover .card{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+/* .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black */
+    /* z-index: 9999; Ensure the overlay is on top */
+  /* } */ 
+  
+  /* .loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+  /* } */
+  footer{background-color: grey;
+text-align: center;
+margin-top: auto;
+padding: 8px;
+}
+
+.form-box{box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}

@@ -1,0 +1,46 @@
+/* CSS for Large screens */
+@media (min-width: 1200px) {
+   .Category-slider {
+      height: 200px !important;
+      width: auto !important;
+    }
+   .category-name {
+      font-size: 24px;
+    }
+  }
+  
+  /* CSS for Medium screens */
+  @media (min-width: 768px) and (max-width: 1199px) {
+ .Category-slider {
+      height: 150px !important;
+      width: auto !important;
+    }
+    .category-name {
+      font-size: 16px;
+    }
+  }
+  
+  /* CSS for Small screens */
+  @media (max-width: 767px) {
+    .Category-slider {
+      height: 100px !important;
+      width: auto !important;
+    }
+   .category-name {
+      font-size: 10px;
+    }
+  }
+  
+  /* CSS for Extra small screens */
+  @media (max-width: 575px) {
+   .Category-slider{
+      height: 50px !important;
+      width: auto !important;
+    }
+    .category-name{
+      font-size: 8px;
+    }
+  }
+  
+  
+  
